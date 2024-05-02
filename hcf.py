@@ -31,6 +31,9 @@ def com(image):
     return COM / total_mass
 
 def hcf(image_path, stego_img_path):
+    """
+    Histogram Characteristic Function(HCF)
+    """
     cover_image = Image.open(image_path).convert("L") # grey cover
     stego_image = Image.open(stego_img_path).convert("L") # grey stego
 
